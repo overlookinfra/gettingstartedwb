@@ -1,0 +1,20 @@
+groups:
+  - name: windows
+    targets:
+      - gsboltwswinN.classroom.puppet.com
+    config:
+      transport: winrm
+      winrm:
+        user: Administrator
+        password: Puppetlabs!
+        ssl: false
+  - name: linux
+    targets:
+      - gsboltwsnixN.classroom.puppet.com
+    config:
+      transport: ssh
+      ssh:
+        user: centos
+        private-key: ./student.pem
+        host-key-check: false
+        run-as: root 

@@ -1,0 +1,5 @@
+---
+name: boltshop
+modulepath: 
+  - "./modules"
+
